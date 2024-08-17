@@ -1,0 +1,169 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.my_blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0c0c0c;
+  color: #fff;
+  width: 100%;
+  padding: 10px 0px;
+
+}
+.my_blog li{
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  
+}
+.my_blog li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.my_blog li a:hover{
+  color: #ddd;
+  text-decoration:underline;
+}
+ 
+
+
+
+
+
+
+
+#Logout {
+  cursor: pointer;
+}
+
+.notify {
+  position: fixed;
+  background: green;
+  margin: 80px auto ;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #0faa43;
+  padding: 10px;
+  text-align: center;
+  display: none; /* hide by default */
+}
+
+.notify.show {
+  background: green;
+  color: #fff;
+  text-align: center;
+
+}
+
+.container_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.main_content {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  
+}
+.post_form{
+  border: 1px solid black;
+  width: 100%;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow:0px 4px 8px rgb(36, 35, 35) ;
+ 
+  
+}
+
+.post_form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main_content,.post_form input[type="text"], .post_form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0px;
+  /* border: 1px solid #1b1b1b; */
+}
+
+.post_form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #111311;
+  color: #fff;
+  cursor: pointer;
+}
+
+.post_form button:hover {
+  background: #bdb8b8;
+}
+
+.post_btn {
+  margin-right: 10px;
+}
+
+.update_btn {
+  display: none;
+  background-color: #337ab7;
+}
+
+.update_btn:hover {
+  background-color: #23527c;
+}
+
+/* Table Styles */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
